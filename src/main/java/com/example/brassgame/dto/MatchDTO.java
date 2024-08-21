@@ -21,7 +21,7 @@ public class MatchDTO {
         this.id = match.getId();
         this.createdBy = match.getCreatedBy();
         this.currentPlayers = match.getCurrentPlayers();
-        this.maxPlayers = match.getMaxPlayers();
+        this.maxPlayers = match.getGame().getMaxPlayers();
         this.turnDuration = match.getTurnDuration();
         this.status = match.getStatus();
         this.gameName = match.getGame().getName();

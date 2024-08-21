@@ -32,7 +32,7 @@ public class MatchController {
         Match match = new Match();
         match.setCreatedBy(matchDTO.getCreatedBy());
         match.setCurrentPlayers(matchDTO.getCurrentPlayers());
-        match.setMaxPlayers(matchDTO.getMaxPlayers());
+        match.setMaxPlayers(game.getMaxPlayers());
         match.setTurnDuration(matchDTO.getTurnDuration());
         match.setStatus(matchDTO.getStatus());
         match.setGame(game);
